@@ -1,0 +1,98 @@
+def answer(plaintext):
+    if not plaintext:
+        return plaintext
+
+    res = []
+    s = plaintext
+
+    for i in s:
+
+        if i.isupper():
+            res.append('000001')
+
+        if i == 'a' or i == 'A':
+            res.append("100000")
+
+        if i == 'b' or i == 'B':
+            res.append("110000")
+
+        if i == 'c' or i == 'C':
+            res.append('100100')
+
+        if i == 'd' or i == 'D':
+            res.append('100110')
+
+        if i == 'e' or i == 'E':
+            res.append('100010')
+
+        if i == 'f' or i == 'F':
+            res.append('110100')
+
+        if i == 'g' or i == 'G':
+            res.append('110110')
+
+        if i == 'h' or i == 'H':
+            res.append('110010')
+
+        if i == 'i' or i == 'I':
+            res.append('010100')
+
+        if i == 'j' or i == 'J':
+            res.append('010110')
+
+        if i == 'k' or i == 'K':
+            res.append('101000')
+
+        if i == 'l' or i == 'L':
+            res.append('111000')
+
+        if i == 'm' or i == 'M':
+            res.append('101100')
+
+        if i == 'n' or i == 'N':
+            res.append('101110')
+
+        if i == 'o' or i == 'O':
+            res.append('101010')
+
+        if i == 'p' or i == 'P':
+            res.append('111100')
+
+        if i == 'q' or i == 'Q':
+            res.append('111110')
+
+        if i == 'r' or i == 'R':
+            res.append('111010')
+
+        if i == 's' or i == 'S':
+            res.append('011100')
+
+        if i == 't' or i == 'T':
+            res.append('011110')
+
+        if i == 'u' or i == 'U':
+            res.append('101001')
+
+        if i == 'v' or i == 'V':
+            res.append('111001')
+
+        if i == 'w' or i == 'W':
+            res.append('010111')
+
+        if i == 'x' or i == 'X':
+            res.append('101101')
+
+        if i == 'y' or i == 'Y':
+            res.append('101111')
+
+        if i == 'z' or i == 'Z':
+            res.append('101011')
+
+        if i == ' ':
+            res.append('000000')
+
+    print(res)
+
+    return ''.join(res)
+
+answer('To the vibe')
