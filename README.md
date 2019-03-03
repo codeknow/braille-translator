@@ -1,6 +1,5 @@
 # **Braille translator.** 
-Short Python script that accepts all 26 alpha lower or 
-uppercase letters and spaces and converts the alpha to braille using code.
+Short Python script that converts all 26 (lower or uppercase) alpha letters and spaces to braille using code.
 
 https://en.wikipedia.org/wiki/Braille
 
